@@ -105,5 +105,7 @@
      "jansen2013general"
      "DBLP:journals/corr/abs-0904-4458"
      "boldi2012special"
-     "doerr2012playing")))
+     "doerr2012playing"
+     "aspinallgive"
+     "bailey2013resolving")))
 
