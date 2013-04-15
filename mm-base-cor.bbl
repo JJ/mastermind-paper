@@ -1,0 +1,180 @@
+\begin{thebibliography}{10}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{mm:mathworld}
+E.~W. Weisstein,
+  \href{http://mathworld.wolfram.com/Mastermind.html}{Mastermind.}, From
+  MathWorld--A Wolfram Web Resource.
+\newline\urlprefix\url{http://mathworld.wolfram.com/Mastermind.html}
+
+\bibitem{wiki:mm}
+Wikipedia, \href{http://sl.ugr.es/001X}{Mastermind (board game) ---
+  {W}ikipedia{,} {T}he {F}ree {E}ncyclopedia} (2009).
+\newline\urlprefix\url{http://sl.ugr.es/001X}
+
+\bibitem{francisstrategies:moo}
+J.~Francis, {Strategies for playing MOO, or "Bulls and Cows"},
+  \url{http://www.jfwaf.com/Bulls%20and%20Cows.pdf}.
+
+\bibitem{Chen2007435}
+S.-T. Chen, S.-S. Lin, L.-T. Huang, A two-phase optimization algorithm for
+  mastermind, Computer Journal 50~(4) (2007) 435--443.
+
+\bibitem{asuncion2010nonadaptive}
+A.~Asuncion, M.~Goodrich, Nonadaptive mastermind algorithms for string and
+  vector databases, with case studies, Knowledge and Data Engineering, IEEE
+  Transactions on~(99) (2010) 1--1.
+
+\bibitem{DBLP:journals/corr/abs-0904-4458}
+M.~T. Goodrich, The mastermind attack on genomic data, CoRR abs/0904.4458.
+
+\bibitem{bank:mm}
+R.~Focardi, F.~Luccio, Cracking bank pins by playing mastermind, in: P.~Boldi,
+  L.~Gargano (Eds.), Fun with Algorithms, Vol. 6099 of Lecture Notes in
+  Computer Science, Springer-Verlag, Berlin Heidelberg, 2010, pp. 202--213.
+
+\bibitem{focardi2011guessing}
+R.~Focardi, F.~Luccio, Guessing bank pins by winning a mastermind game, Theory
+  of Computing Systems (2011) 1--20.
+
+\bibitem{goodrich2009algorithmic}
+M.~Goodrich, {On the algorithmic complexity of the Mastermind game with
+  black-peg results}, Information Processing Letters 109~(13) (2009) 675--678.
+
+\bibitem{gagneur2011selective}
+J.~Gagneur, M.~Elze, A.~Tresch, Selective phenotyping, entropy reduction, and
+  the mastermind game, BMC bioinformatics 12~(1) (2011) 406,
+  \url{http://www.biomedcentral.com/1471-2105/12/406}.
+
+\bibitem{mastermind05}
+J.~J. Merelo-Guerv\'os, P.~Castillo, V.~Rivas, Finding a needle in a haystack
+  using hints and evolutionary computation: the case of evolutionary
+  {M}aster{M}ind, Applied Soft Computing 6~(2) (2006) 170--179,
+  \url{http://www.sciencedirect.com/science/article/B6W86-4FH0D6P-1/2/40a99afa%
+8e9c7734baae340abecc113a}; \url{http://dx.doi.org/10.1016/j.asoc.2004.09.003}.
+
+\bibitem{boldi2012special}
+P.~Boldi, L.~Gargano, Special issue on fun with algorithms, Theory of Computing
+  Systems (2012) 1--2.
+
+\bibitem{stackoverflow}
+{Several Authors}, How to solve the ''{Mastermind}'' guessing game?,
+  \url{http://stackoverflow.com/questions/1185634/how-to-solve-the-mastermind-%
+guessing-game}, question posed in StackOverflow and many answers.
+
+\bibitem{o1991mastermind}
+J.~O\'{}Geran, H.~Wynn, A.~Zhigljavsky, Mastermind as a test-bed for search
+  algorithms, Chance 6 (1993) 31--37.
+
+\bibitem{abs-cs-0512049}
+J.~Stuckman, G.-Q. Zhang, \href{http://arxiv.org/abs/cs/0512049}{Mastermind is
+  {NP}-complete}, INFOCOMP J. Comput. Sci 5 (2006) 25--28.
+\newline\urlprefix\url{http://arxiv.org/abs/cs/0512049}
+
+\bibitem{Kendall200813}
+G.~Kendall, A.~Parkes, K.~Spoerer, A survey of {NP}-complete puzzles, ICGA
+  Journal 31~(1) (2008) 13--34.
+
+\bibitem{DBLP:journals/corr/abs-1111-6922}
+G.~Viglietta, Hardness of mastermind, CoRR abs/1111.6922.
+
+\bibitem{Kooi200513}
+B.~Kooi, Yet another {M}astermind strategy, ICGA Journal 28~(1) (2005) 13--20.
+
+\bibitem{jj-ppsn96}
+J.~L. Bernier, C.-I. Herr\'aiz, J.-J. Merelo-Guerv\'os, S.~Olmeda, A.~Prieto,
+  \href{http://www.springerlink.com/content/78j7430828t2867g}{{Solving {\em
+  {M}aster{M}ind} using {GA}s and simulated annealing: a case of dynamic
+  constraint optimization}}, in: Proceedings PPSN, Parallel Problem Solving
+  from Nature IV, no. 1141 in Lecture Notes in Computer Science,
+  Springer-Verlag, 1996, pp. 553--563.
+\newblock \href {http://dx.doi.org/10.1007/3-540-61723-X\_1019}
+  {\path{doi:10.1007/3-540-61723-X\_1019}}.
+\newline\urlprefix\url{http://www.springerlink.com/content/78j7430828t2867g}
+
+\bibitem{genmm99}
+J.-J. Merelo-Guerv\'os, J.~Carpio, P.~Castillo, V.~M. Rivas, G.~Romero, Finding
+  a needle in a haystack using hints and evolutionary computation: the case of
+  {G}enetic {M}astermind, in: A.~S.~W. Scott~Brave (Ed.), Late breaking papers
+  at the GECCO99, 1999, pp. 184--192.
+
+\bibitem{2012arXiv1207.0773D}
+B.~{Doerr}, R.~{Sp{\"o}hel}, H.~{Thomas}, C.~{Winzen}, {Playing Mastermind with
+  Many Colors}, ArXiv e-prints\href {http://arxiv.org/abs/1207.0773}
+  {\path{arXiv:1207.0773}}.
+
+\bibitem{Knuth}
+D.~E. Knuth, The computer as {M}aster {M}ind, J. Recreational Mathematics 9~(1)
+  (1976-77) 1--6.
+
+\bibitem{Berghman20091880}
+L.~Berghman, D.~Goossens, R.~Leus, Efficient solutions for {M}astermind using
+  genetic algorithms, Computers and Operations Research 36~(6) (2009)
+  1880--1885.
+
+\bibitem{irving}
+R.~W. Irving, Towards an optimum {M}astermind strategy, Journal of Recreational
+  Mathematics 11~(2) (1978-79) 81--87.
+
+\bibitem{Neuwirth}
+E.~Neuwirth, Some strategies for {M}astermind, Zeitschrift fur Operations
+  Research. Serie B 26~(8) (1982) B257--B278.
+
+\bibitem{bestavros}
+A.~Bestavros, A.~Belal,
+  \href{http://citeseer.ist.psu.edu/bestavros86mastermind.html}{Mastermind, a
+  game of diagnosis strategies}, Bulletin of the Faculty of Engineering,
+  Alexandria University.
+\newline\urlprefix\url{http://citeseer.ist.psu.edu/bestavros86mastermind.html}
+
+\bibitem{mm:ppsn:2010}
+C.~Cotta, J.~Merelo~Guerv\'os, A.~Mora~Garc\'ia, T.~Runarsson,
+  \href{http://dx.doi.org/10.1007/978-3-642-15871-1\_43}{Entropy-driven
+  evolutionary approaches to the {Mastermind} problem}, in: R.~Schaefer,
+  C.~Cotta, J.~Kolodziej, G.~Rudolph (Eds.), Parallel Problem Solving from
+  Nature PPSN XI, Vol. 6239 of Lecture Notes in Computer Science, Springer
+  Berlin / Heidelberg, 2010, pp. 421--431.
+\newline\urlprefix\url{http://dx.doi.org/10.1007/978-3-642-15871-1\_43}
+
+\bibitem{nicso}
+T.~P. Runarsson, J.~J. Merelo, Adapting heuristic {M}astermind strategies to
+  evolutionary algorithms, in: NICSO'10 Proceedings, Studies in Computational
+  Intelligence, Springer-Verlag, 2010, pp. 255--267, also available from ArXiV:
+  \url{http://arxiv.org/abs/0912.2415v1}.
+
+\bibitem{DBLP:conf/cec/GuervosMC11}
+J.-J. Merelo-Guerv{\'o}s, A.-M. Mora, C.~Cotta, Optimizing worst-case scenario
+  in evolutionary solutions to the {MasterMind} puzzle, in: IEEE Congress on
+  Evolutionary Computation, IEEE, 2011, pp. 2669--2676.
+
+\bibitem{DBLP:conf/evoW/GuervosCM11}
+J.-J. Merelo-Guerv{\'o}s, C.~Cotta, A.~Mora, {Improving and Scaling
+  Evolutionary Approaches to the MasterMind Problem}, in: C.~D. Chio,
+  S.~Cagnoni, C.~Cotta, M.~Ebner, A.~Ek{\'a}rt, A.~Esparcia-Alc{\'a}zar,
+  J.~J.~M. Guerv{\'o}s, F.~Neri, M.~Preuss, H.~Richter, J.~Togelius, G.~N.
+  Yannakakis (Eds.), EvoApplications (1), Vol. 6624 of Lecture Notes in
+  Computer Science, Springer, 2011, pp. 103--112.
+
+\bibitem{DBLP:conf/iwann/MereloRACML11}
+J.-J. Merelo-Guerv{\'o}s, G.~Romero, M.~Garc\'{\i}a-Arenas, P.~A. Castillo,
+  A.-M. Mora, J.-L. Jim{\'e}nez-Laredo, Implementation matters: Programming
+  best practices for evolutionary algorithms, in: J.~Cabestany, I.~Rojas, G.~J.
+  Caparr{\'o}s (Eds.), IWANN (2), Vol. 6692 of Lecture Notes in Computer
+  Science, Springer, 2011, pp. 333--340.
+
+\bibitem{juanlu:SC08}
+J.~L.~J. Laredo, P.~A. Castillo, A.~M. Mora, J.~J. Merelo, Evolvable agents, a
+  fine grained approach for distributed evolutionary computing: walking towards
+  the peer-to-peer computing frontiers, Soft Computing - A Fusion of
+  Foundations, Methodologies and Applications 12~(12) (2008) 1145--1156.
+
+\bibitem{sofea:naco}
+J.-J. Merelo-Guerv\'os, A.~Mora, C.~Fernandes, A.~I. Esparcia, Designing and
+  testing a pool-based evolutionary algorithm, submitted to Natural Computing
+  (2012).
+
+\end{thebibliography}

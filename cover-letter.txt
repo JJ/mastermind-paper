@@ -1,0 +1,18 @@
+Dear editors:
+
+     Attached is our manuscript titled "An experimental study of
+exhaustive solutions for the Mastermind puzzle" to be considered for
+publication in your journal. The main reason for this submission to
+your journal is the prior publication of an article related to the
+topic of Mastermind, "Efficient solutions for Mastermind using genetic
+algorithms" by Berghman, Goossens and Leus; this last one has been
+suggested as a reviewer.
+
+	A draft for this paper has been published also in ArXiV
+http://arxiv.org/abs/1207.1315. Please note that there are several
+major (material added) and minor (corrections) with this submission.
+
+      Yours,
+
+Merelo, Mora, Cotta, Runarsson
+

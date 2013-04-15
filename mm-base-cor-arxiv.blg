@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: mm-base-cor-arxiv.aux
+The style file: elsarticle-num.bst
+Database file #1: geneura.bib
+Database file #2: mastermind.bib
+You've used 29 entries,
+            2937 wiz_defined-function locations,
+            886 strings with 11707 characters,
+and the built_in function-call counts, 9716 in all, are:
+= -- 914
+> -- 316
+< -- 13
++ -- 123
+- -- 94
+* -- 682
+:= -- 1279
+add.period$ -- 30
+call.type$ -- 29
+change.case$ -- 35
+chr.to.int$ -- 0
+cite$ -- 29
+duplicate$ -- 340
+empty$ -- 1093
+format.name$ -- 117
+if$ -- 2542
+int.to.chr$ -- 0
+int.to.str$ -- 29
+missing$ -- 24
+newline$ -- 102
+num.names$ -- 39
+pop$ -- 216
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 646
+stack$ -- 0
+substring$ -- 537
+swap$ -- 108
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 75
+width$ -- 31
+write$ -- 259
