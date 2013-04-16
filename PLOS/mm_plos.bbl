@@ -1,0 +1,148 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{mm:mathworld}
+Weisstein EW.
+\newblock Mastermind.
+\newblock From MathWorld--A Wolfram Web Resource.
+\newblock \urlprefix\url{http://mathworld.wolfram.com/Mastermind.html}.
+\bibAnnoteFile{mm:mathworld}
+
+\bibitem{wiki:mm}
+Wikipedia (2009).
+\newblock Mastermind (board game) --- {W}ikipedia{,} {T}he {F}ree
+  {E}ncyclopedia.
+\newblock \urlprefix\url{http://sl.ugr.es/001X}.
+\bibAnnoteFile{wiki:mm}
+
+\bibitem{francisstrategies:moo}
+Francis J.
+\newblock {Strategies for playing MOO, or "Bulls and Cows"}.
+\newblock \url{http://www.jfwaf.com/Bulls%20and%20Cows.pdf}.
+\bibAnnoteFile{francisstrategies:moo}
+
+\bibitem{Chen2007435}
+Chen ST, Lin SS, Huang LT (2007) A two-phase optimization algorithm for
+  mastermind.
+\newblock Computer Journal 50: 435-443.
+\bibAnnoteFile{Chen2007435}
+
+\bibitem{asuncion2010nonadaptive}
+Asuncion A, Goodrich M (2010) Nonadaptive mastermind algorithms for string and
+  vector databases, with case studies.
+\newblock Knowledge and Data Engineering, IEEE Transactions on : 1--1.
+\bibAnnoteFile{asuncion2010nonadaptive}
+
+\bibitem{DBLP:journals/corr/abs-0904-4458}
+Goodrich MT (2009) The mastermind attack on genomic data.
+\newblock CoRR abs/0904.4458.
+\bibAnnoteFile{DBLP:journals/corr/abs-0904-4458}
+
+\bibitem{bank:mm}
+Focardi R, Luccio F (2010) Cracking bank pins by playing mastermind.
+\newblock In: Boldi P, Gargano L, editors, Fun with Algorithms, Berlin
+  Heidelberg: Springer-Verlag, volume 6099 of \emph{Lecture Notes in Computer
+  Science}. pp. 202-213.
+\bibAnnoteFile{bank:mm}
+
+\bibitem{focardi2011guessing}
+Focardi R, Luccio F (2011) Guessing bank pins by winning a mastermind game.
+\newblock Theory of Computing Systems : 1--20.
+\bibAnnoteFile{focardi2011guessing}
+
+\bibitem{goodrich2009algorithmic}
+Goodrich M (2009) {On the algorithmic complexity of the Mastermind game with
+  black-peg results}.
+\newblock Information Processing Letters 109: 675--678.
+\bibAnnoteFile{goodrich2009algorithmic}
+
+\bibitem{gagneur2011selective}
+Gagneur J, Elze M, Tresch A (2011) Selective phenotyping, entropy reduction,
+  and the mastermind game.
+\newblock BMC bioinformatics 12: 406.
+\bibAnnoteFile{gagneur2011selective}
+
+\bibitem{boldi2012special}
+Boldi P, Gargano L (2012) Special issue on fun with algorithms.
+\newblock Theory of Computing Systems : 1--2.
+\bibAnnoteFile{boldi2012special}
+
+\bibitem{stackoverflow}
+{Several Authors}.
+\newblock How to solve the ''{Mastermind}'' guessing game?
+\newblock
+  \url{http://stackoverflow.com/questions/1185634/how-to-solve-the-mastermind-guessing-game}.
+\newblock Question posed in StackOverflow and many answers.
+\bibAnnoteFile{stackoverflow}
+
+\bibitem{o1991mastermind}
+O\'{}Geran J, Wynn H, Zhigljavsky A (1993) Mastermind as a test-bed for search
+  algorithms.
+\newblock Chance 6: 31--37.
+\bibAnnoteFile{o1991mastermind}
+
+\bibitem{abs-cs-0512049}
+Stuckman J, Zhang GQ (2006) Mastermind is {NP}-complete.
+\newblock INFOCOMP J Comput Sci 5: 25--28.
+\bibAnnoteFile{abs-cs-0512049}
+
+\bibitem{Kendall200813}
+Kendall G, Parkes A, Spoerer K (2008) A survey of {NP}-complete puzzles.
+\newblock ICGA Journal 31: 13-34.
+\bibAnnoteFile{Kendall200813}
+
+\bibitem{DBLP:journals/corr/abs-1111-6922}
+Viglietta G (2011) {Hardness of Mastermind}.
+\newblock CoRR abs/1111.6922.
+\bibAnnoteFile{DBLP:journals/corr/abs-1111-6922}
+
+\bibitem{Kooi200513}
+Kooi B (2005) Yet another {M}astermind strategy.
+\newblock ICGA Journal 28: 13-20.
+\bibAnnoteFile{Kooi200513}
+
+\bibitem{2012arXiv1207.0773D}
+{Doerr} B, {Sp{\"o}hel} R, {Thomas} H, {Winzen} C (2012) {Playing Mastermind
+  with Many Colors}.
+\newblock ArXiv e-prints .
+\bibAnnoteFile{2012arXiv1207.0773D}
+
+\bibitem{Knuth}
+Knuth DE (1976-77) The computer as {M}aster {M}ind.
+\newblock J Recreational Mathematics 9: 1--6.
+\bibAnnoteFile{Knuth}
+
+\bibitem{Berghman20091880}
+Berghman L, Goossens D, Leus R (2009) Efficient solutions for {M}astermind
+  using genetic algorithms.
+\newblock Computers and Operations Research 36: 1880-1885.
+\bibAnnoteFile{Berghman20091880}
+
+\bibitem{irving}
+Irving RW (1978-79) Towards an optimum {M}astermind strategy.
+\newblock Journal of Recreational Mathematics 11: 81--87.
+\bibAnnoteFile{irving}
+
+\bibitem{Neuwirth}
+Neuwirth E (1982) Some strategies for {M}astermind.
+\newblock Zeitschrift fur Operations Research Serie B 26: B257--B278.
+\bibAnnoteFile{Neuwirth}
+
+\bibitem{bestavros}
+Bestavros A, Belal A (1986) Mastermind, a game of diagnosis strategies.
+\newblock Bulletin of the Faculty of Engineering, Alexandria University .
+\bibAnnoteFile{bestavros}
+
+\end{thebibliography}
