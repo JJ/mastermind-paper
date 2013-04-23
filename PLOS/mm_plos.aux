@@ -6,7 +6,7 @@
 \citation{Chen2007435}
 \citation{asuncion2010nonadaptive}
 \citation{DBLP:journals/corr/abs-0904-4458}
-\newlabel{sec:intro}{{}{1}}
+\newlabel{s:intro}{{}{1}}
 \citation{DBLP:journals/corr/abs-0904-4458}
 \citation{bank:mm,focardi2011guessing}
 \citation{goodrich2009algorithmic,DBLP:journals/corr/abs-0904-4458}
@@ -18,137 +18,140 @@
 \citation{abs-cs-0512049,Kendall200813}
 \citation{DBLP:journals/corr/abs-1111-6922}
 \citation{Kooi200513}
-\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Progress in a MasterMind game that tries to guess the secret combination {\em  ABBC}. 2nd and 4th combinations are not {\em  consistent} with the first one, not coinciding in two positions and one color with it. \relax }}{2}}
-\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{tab:mm}{{1}{2}}
 \citation{jj-ppsn96,genmm99,mastermind05}
 \citation{o1991mastermind}
 \citation{2012arXiv1207.0773D}
 \citation{mastermind05}
-\newlabel{subsec:mm}{{}{3}}
-\newlabel{subsec:soa}{{}{3}}
 \citation{Chen2007435}
 \citation{Kooi200513}
+\newlabel{s:mm}{{}{3}}
+\newlabel{s:soa}{{}{3}}
 \citation{Knuth}
 \citation{Berghman20091880,irving}
 \citation{Kooi200513}
-\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Table of partitions after two combinations have been played; this table is the result of comparing each combination against all the rest of the set, which is the set of consistent combinations in a game after two combinations have already been played. In boldface, the combinations which have the minimal worst set size (which happen to be in the 1b-1w column, but it could be any one); in this case, equal to ten. A strategy that tries to minimize worst case would play one of those combinations. The column 0b-1w with all values equal to 0 has been suppressed; column for combination 3b-1w, being impossible, is not shown either. Some rows have also been eliminated for the sake of compactness. \relax }}{4}}
-\newlabel{tab:partitions}{{2}{4}}
 \citation{Neuwirth,bestavros,mm:ppsn:2010}
 \citation{nicso}
 \citation{o1991mastermind}
 \citation{Knuth}
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Choosing the next move in the general case\relax }}{4}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{alg:general}{{1}{4}}
 \citation{Knuth}
-\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Choosing the next move in the general case\relax }}{5}}
-\newlabel{alg:general}{{1}{5}}
-\newlabel{sec:nsm}{{}{6}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Choosing the next move in the {\em  Plus} Mastermind solution method. This algorithm is the new version we propose to the \textsc  {NextMove} function presented in Algorithm 1\hbox {}.\relax }}{6}}
-\newlabel{alg:plus}{{2}{6}}
-\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Choosing the next move in the {\em  Plus} Mastermind solution method. Please note that up to line 6, this algorithm is identical to 2\hbox {}.\relax }}{7}}
-\newlabel{alg:plus2}{{3}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Average and maximum number of moves for the new search strategies proposed, and comparison with the previous ones. \relax }}{7}}
-\newlabel{tab:plus:46}{{3}{7}}
-\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Percentage of times the secret code is among the top scorers for each method, $\kappa =4, \ell =6$. Entropy column has been suppressed for clarity. \relax }}{8}}
-\newlabel{tab:top:plus}{{4}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red), to which we have added Plus (dotted, blue) and Plus2 (dash-dotted, brown), for $\kappa =6, \ell =4$.\relax }}{8}}
-\newlabel{fig:top:plus}{{1}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red, same as in Figure 16\hbox {}) to which we have added Plus and Plus2, practically one on top of the other and represented with dark-blue and dotted (Plus) and blue dash-dotted (Plus2). \relax }}{9}}
-\newlabel{fig:prob:plus:46}{{2}{9}}
-\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Average and maximum number of moves for the two new search strategies, Plus and Plus2, along with the previously shown Most Parts and Entropy for $\kappa =8, \ell =4$. \relax }}{10}}
-\newlabel{tab:plus:48}{{5}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black Entropy, dotted and blue for Plus and dash-dotted and brown for Plus2. Please note that the $y$ axis is logarithmic; we have put it that way to highlight differences. \relax }}{10}}
-\newlabel{fig:cset:plus:48}{{3}{10}}
+\citation{nicso,Berghman20091880}
+\citation{Knuth}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Analyzing exhaustive search methods}{5}}
+\newlabel{s:sm}{{1}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}$\ell =4,\kappa =6$}{5}}
+\newlabel{ss:k6}{{1.1}{5}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Histogram with the count of the number of times every method is able to find the solution in every number of moves, for the Entropy method (black and solid) and Most Parts (light or red, dashed). \relax }}{6}}
+\newlabel{fig:histo:me}{{1}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces . \relax }}{7}}
+\newlabel{fig:dif:me}{{2}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Difference in score among the number of games won by Entropy and Most Parts in $x$ moves. Every $y$ value in the graph 2\hbox {} has been multiplied by the number of moves, resulting in the actual score the player would achieve. Remember that less is better; positive values mean that Entropy beats Most Parts (for that move), and vice versa. \relax }}{8}}
+\newlabel{fig:scoredif:me}{{3}{8}}
+\citation{Knuth}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Average number of combinations (or moves) remaining after each move, for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in Table 4\hbox {}. The $y$ axis is logarithmic for clarity, and the $x$ axis is shifted by one (1 means the second move, size before the first move is always the whole space).\relax }}{9}}
+\newlabel{fig:cset:me}{{4}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}$\ell =4,\kappa =8$}{9}}
+\newlabel{ss:k8}{{1.2}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in Table 5\hbox {}.\relax }}{10}}
+\newlabel{fig:top:me}{{5}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red). \relax }}{11}}
+\newlabel{fig:prob:me:46}{{6}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Frequency of the number of moves up to (and including) the secret combination, for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black line Entropy. \relax }}{12}}
+\newlabel{fig:histo:me:48}{{7}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black Entropy. \relax }}{13}}
+\newlabel{fig:cset:me:48}{{8}{13}}
+\newlabel{s:nsm}{{1.2}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Difference among the number of games won by Entropy and Most Parts in $x$ moves for $\kappa =8, \ell =4$. \relax }}{14}}
+\newlabel{fig:dif:me:48}{{9}{14}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Choosing the next move in the {\em  Plus} Mastermind solution method. This algorithm is the new version we propose to the \textsc  {NextMove} function presented in Algorithm 1\hbox {}.\relax }}{14}}
+\newlabel{alg:plus}{{2}{14}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Difference in score among the number of games won by Entropy and Most Parts in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 3\hbox {}, that is, product of difference and number of moves. \relax }}{15}}
+\newlabel{fig:scoredif:me:48}{{10}{15}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces Choosing the next move in the {\em  Plus} Mastermind solution method. Please note that up to line 6, this algorithm is identical to 2\hbox {}.\relax }}{15}}
+\newlabel{alg:plus2}{{3}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in table 8\hbox {} for $\kappa =8, \ell =4$.\relax }}{16}}
+\newlabel{fig:top:me:48}{{11}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red) for $\kappa =8, \ell =4$. Remember that the $x$ axis is shifted by one, since the first move is fixed.\relax }}{17}}
+\newlabel{fig:prob:me:48}{{12}{17}}
 \citation{Berghman20091880}
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Chance of finding the secret code among the top scorers for the Plus (dotted, blue), Plus2 (dash-dotted, brown), Entropy method (black and solid) and Most Parts (light or red).\relax }}{11}}
-\newlabel{fig:top:plus:48}{{4}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Plus2 (light or brown, dot-dashed). Plus has been suppressed for clarity; the $x$ axis is shifted by one, with $x=1$ representing the second move.\relax }}{12}}
-\newlabel{fig:prob:plus:48}{{5}{12}}
-\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Comparison of average and maximum number of moves using ABCA as first move and the best of the previous ones. \relax }}{13}}
-\newlabel{tab:abca:48}{{6}{13}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Plus2 (light or brown, dot-dashed), both for ABCD as first move, and Entropy (black, dot-long-dash) and Plus2 (brown or light, long dash) for ABCA .\relax }}{13}}
-\newlabel{fig:prob:abca:48}{{6}{13}}
-\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move for Entropy ABCD and ABCA (the quantities for Plus2 are practically the same). The number of combinations is the same after the first move (not shown here), since both are playing the same first move.\relax }}{14}}
-\newlabel{tab:cset:abca:48}{{7}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Difference in score among the number of games won by Entropy (ABCD) and Entropy (ABCA) in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 13\hbox {}, that is, product of difference and number of moves. \relax }}{14}}
-\newlabel{fig:scoredif:abca:48}{{7}{14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and two-dashed and brown for Plus2. Please note that the $y$ axis is logarithmic; we have put it that way to highlight differences. \relax }}{15}}
-\newlabel{fig:cset:mp:plus:48}{{8}{15}}
-\newlabel{subsec:conclusions}{{}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red), to which we have added Plus (dotted, blue) and Plus2 (dash-dotted, brown), for $\kappa =6, \ell =4$.\relax }}{18}}
+\newlabel{fig:top:plus}{{13}{18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red) (same as in Figure 6\hbox {}) to which we have added Plus and Plus2, practically one on top of the other and represented with dark-blue and dotted (Plus) and blue dash-dotted (Plus2). \relax }}{19}}
+\newlabel{fig:prob:plus:46}{{14}{19}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black Entropy, dotted and blue for Plus and dash-dotted and brown for Plus2. Please note that the $y$ axis is logarithmic; we have put it that way to highlight differences. \relax }}{20}}
+\newlabel{fig:cset:plus:48}{{15}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Chance of finding the secret code among the top scorers for the Plus (dotted, blue), Plus2 (dash-dotted, brown), Entropy method (black and solid) and Most Parts (light or red).\relax }}{21}}
+\newlabel{fig:top:plus:48}{{16}{21}}
 \citation{DBLP:conf/cec/GuervosMC11}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Chance of drawing the secret code for the Most Parts (ABCD) method (red or light and dot-dashed) and Plus2 (ABCA) (light or brown, two-dashed).\relax }}{16}}
-\newlabel{fig:prob:mp:abca:48}{{9}{16}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Plus2 (light or brown, dot-dashed). Plus has been suppressed for clarity; the $x$ axis is shifted by one, with $x=1$ representing the second move.\relax }}{22}}
+\newlabel{fig:prob:plus:48}{{17}{22}}
+\newlabel{s:c}{{1.2}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Plus2 (light or brown, dot-dashed), both for ABCD as first move, and Entropy (black, dot-long-dash) and Plus2 (brown or light, long dash) for ABCA .\relax }}{23}}
+\newlabel{fig:prob:abca:48}{{18}{23}}
 \citation{DBLP:conf/evoW/GuervosCM11,Berghman20091880}
 \citation{nicso}
 \citation{Berghman20091880}
 \citation{jj-ppsn96}
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces Difference in score among the number of games won by Most Parts (ABCD) and Plus2 (ABCA) in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 13\hbox {}, that is, product of difference and number of moves. \relax }}{17}}
-\newlabel{fig:scoredif:mp:abca:48}{{10}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Difference in score among the number of games won by Entropy (ABCD) and Entropy (ABCA) in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 3\hbox {}, that is, product of difference and number of moves. \relax }}{24}}
+\newlabel{fig:scoredif:abca:48}{{19}{24}}
 \citation{DBLP:conf/iwann/MereloRACML11}
 \citation{juanlu:SC08}
 \citation{sofea:naco}
-\citation{nicso,Berghman20091880}
-\citation{Knuth}
-\newlabel{sec:analysis}{{}{18}}
-\newlabel{subsec:k6}{{}{18}}
-\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Average (with error of the mean) and Maximum number of moves for two search strategies: Most Parts and Entropy. \relax }}{18}}
-\newlabel{tab:me}{{8}{18}}
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces Histogram with the count of the number of times every method is able to find the solution in every number of moves, for the Entropy method (black and solid) and Most Parts (light or red, dashed). \relax }}{19}}
-\newlabel{fig:histo:me}{{11}{19}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces . \relax }}{20}}
-\newlabel{fig:dif:me}{{12}{20}}
-\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move (or step). The numbers are the same after the first move (not shown here), since they are playing the same one.\relax }}{20}}
-\newlabel{tab:cset:me}{{9}{20}}
-\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Difference in score among the number of games won by Entropy and Most Parts in $x$ moves. Every $y$ value in the graph 12\hbox {} has been multiplied by the number of moves, resulting in the actual score the player would achieve. Remember that less is better; positive values mean that Entropy beats Most Parts (for that move), and vice versa. \relax }}{21}}
-\newlabel{fig:scoredif:me}{{13}{21}}
-\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Average number of combinations (or moves) remaining after each move, for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in Table 9\hbox {}. The $y$ axis is logarithmic for clarity, and the $x$ axis is shifted by one (1 means the second move, size before the first move is always the whole space).\relax }}{22}}
-\newlabel{fig:cset:me}{{14}{22}}
-\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Percentage of times the secret code is among the top scorers for each method.\relax }}{22}}
-\newlabel{tab:top:me}{{10}{22}}
-\citation{Knuth}
-\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in Table 10\hbox {}.\relax }}{23}}
-\newlabel{fig:top:me}{{15}{23}}
-\newlabel{subsec:k8}{{}{23}}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red). \relax }}{24}}
-\newlabel{fig:prob:me:46}{{16}{24}}
-\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Average (with error of the mean) and Maximum number of moves for two search strategies: Most Parts and Entropy for $\kappa =8, \ell =4$. \relax }}{25}}
-\newlabel{tab:me:48}{{11}{25}}
-\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces Frequency of the number of moves up to (and including) the secret combination, for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black line Entropy. \relax }}{25}}
-\newlabel{fig:histo:me:48}{{17}{25}}
-\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move. The number of combinations is the same after the first move (not shown here), since both are playing the same first move.\relax }}{26}}
-\newlabel{tab:cset:me:48}{{12}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {18}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and solid black Entropy. \relax }}{26}}
-\newlabel{fig:cset:me:48}{{18}{26}}
-\@writefile{lof}{\contentsline {figure}{\numberline {19}{\ignorespaces Difference among the number of games won by Entropy and Most Parts in $x$ moves for $\kappa =8, \ell =4$. \relax }}{27}}
-\newlabel{fig:dif:me:48}{{19}{27}}
-\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Percentage of times the secret code is among the top scorers for each method, $\kappa =8, \ell =4$.\relax }}{27}}
-\newlabel{tab:top:me:48}{{13}{27}}
 \bibdata{mastermind}
 \bibcite{mm:mathworld}{1}
+\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Average size of the consistent set, that is, the set of solutions that have not been discarded at a point in the game for $\kappa =8, \ell =4$. As usual, red or light dashed line represents Most Parts and two-dashed and brown for Plus2. Please note that the $y$ axis is logarithmic; we have put it that way to highlight differences. \relax }}{25}}
+\newlabel{fig:cset:mp:plus:48}{{20}{25}}
 \bibcite{wiki:mm}{2}
 \bibcite{francisstrategies:moo}{3}
-\@writefile{lof}{\contentsline {figure}{\numberline {20}{\ignorespaces Difference in score among the number of games won by Entropy and Most Parts in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 13\hbox {}, that is, product of difference and number of moves. \relax }}{28}}
-\newlabel{fig:scoredif:me:48}{{20}{28}}
 \bibcite{Chen2007435}{4}
 \bibcite{asuncion2010nonadaptive}{5}
 \bibcite{DBLP:journals/corr/abs-0904-4458}{6}
 \bibcite{bank:mm}{7}
 \bibcite{focardi2011guessing}{8}
 \bibcite{goodrich2009algorithmic}{9}
+\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Chance of drawing the secret code for the Most Parts (ABCD) method (red or light and dot-dashed) and Plus2 (ABCA) (light or brown, two-dashed).\relax }}{26}}
+\newlabel{fig:prob:mp:abca:48}{{21}{26}}
 \bibcite{gagneur2011selective}{10}
 \bibcite{boldi2012special}{11}
-\@writefile{lof}{\contentsline {figure}{\numberline {21}{\ignorespaces Chance of finding the secret code among the top scorers for the Entropy method (black and solid) and Most Parts (light or red). This plot corresponds to the numbers represented in table 13\hbox {} for $\kappa =8, \ell =4$.\relax }}{29}}
-\newlabel{fig:top:me:48}{{21}{29}}
 \bibcite{stackoverflow}{12}
 \bibcite{o1991mastermind}{13}
 \bibcite{abs-cs-0512049}{14}
 \bibcite{Kendall200813}{15}
 \bibcite{DBLP:journals/corr/abs-1111-6922}{16}
 \bibcite{Kooi200513}{17}
+\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Difference in score among the number of games won by Most Parts (ABCD) and Plus2 (ABCA) in $x$ moves for $\kappa =8, \ell =4$. Method is the same as for figure 3\hbox {}, that is, product of difference and number of moves. \relax }}{27}}
+\newlabel{fig:scoredif:mp:abca:48}{{22}{27}}
 \bibcite{2012arXiv1207.0773D}{18}
 \bibcite{Knuth}{19}
 \bibcite{Berghman20091880}{20}
-\@writefile{lof}{\contentsline {figure}{\numberline {22}{\ignorespaces Chance of drawing the secret code for the Entropy method (black and solid) and Most Parts (light or red) for $\kappa =8, \ell =4$. Remember that the $x$ axis is shifted by one, since the first move is fixed.\relax }}{30}}
-\newlabel{fig:prob:me:48}{{22}{30}}
 \bibcite{irving}{21}
 \bibcite{Neuwirth}{22}
 \bibcite{bestavros}{23}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Progress in a MasterMind game that tries to guess the secret combination {\em  ABBC}. 2nd and 4th combinations are not {\em  consistent} with the first one, not coinciding in two positions and one color with it. \relax }}{28}}
+\newlabel{tab:mm}{{1}{28}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Table of partitions after two combinations have been played; this table is the result of comparing each combination against all the rest of the set, which is the set of consistent combinations in a game after two combinations have already been played. In boldface, the combinations which have the minimal worst set size (which happen to be in the 1b-1w column, but it could be any one); in this case, equal to ten. A strategy that tries to minimize worst case would play one of those combinations. The column 0b-1w with all values equal to 0 has been suppressed; column for combination 3b-1w, being impossible, is not shown either. Some rows have also been eliminated for the sake of compactness. \relax }}{29}}
+\newlabel{tab:partitions}{{2}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Average (with error of the mean) and Maximum number of moves for two search strategies: Most Parts and Entropy. \relax }}{29}}
+\newlabel{tab:me}{{3}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move (or step). The numbers are the same after the first move (not shown here), since they are playing the same one.\relax }}{29}}
+\newlabel{tab:cset:me}{{4}{29}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Percentage of times the secret code is among the top scorers for each method.\relax }}{30}}
+\newlabel{tab:top:me}{{5}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Average (with error of the mean) and Maximum number of moves for two search strategies: Most Parts and Entropy for $\kappa =8, \ell =4$. \relax }}{30}}
+\newlabel{tab:me:48}{{6}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move. The number of combinations is the same after the first move (not shown here), since both are playing the same first move.\relax }}{30}}
+\newlabel{tab:cset:me:48}{{7}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {8}{\ignorespaces Percentage of times the secret code is among the top scorers for each method, $\kappa =8, \ell =4$.\relax }}{30}}
+\newlabel{tab:top:me:48}{{8}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {9}{\ignorespaces Average and maximum number of moves for the new search strategies proposed, and comparison with the previous ones. \relax }}{30}}
+\newlabel{tab:plus:46}{{9}{30}}
+\@writefile{lot}{\contentsline {table}{\numberline {10}{\ignorespaces Percentage of times the secret code is among the top scorers for each method, $\kappa =4, \ell =6$. Entropy column has been suppressed for clarity. \relax }}{31}}
+\newlabel{tab:top:plus}{{10}{31}}
+\@writefile{lot}{\contentsline {table}{\numberline {11}{\ignorespaces Average and maximum number of moves for the two new search strategies, Plus and Plus2, along with the previously shown Most Parts and Entropy for $\kappa =8, \ell =4$. \relax }}{31}}
+\newlabel{tab:plus:48}{{11}{31}}
+\@writefile{lot}{\contentsline {table}{\numberline {12}{\ignorespaces Comparison of average and maximum number of moves using ABCA as first move and the best of the previous ones. \relax }}{31}}
+\newlabel{tab:abca:48}{{12}{31}}
+\@writefile{lot}{\contentsline {table}{\numberline {13}{\ignorespaces Average and standard deviation of the number of combinations remaining after every move for Entropy ABCD and ABCA (the quantities for Plus2 are practically the same). The number of combinations is the same after the first move (not shown here), since both are playing the same first move.\relax }}{31}}
+\newlabel{tab:cset:abca:48}{{13}{31}}
