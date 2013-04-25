@@ -1,14 +1,46 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: mm_plos.aux
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: mm_plos.aux
 The style file: plos2009.bst
 Database file #1: mastermind.bib
-Warning--I didn't find a database entry for "mastermind05"
-Warning--I didn't find a database entry for "jj-ppsn96"
-Warning--I didn't find a database entry for "genmm99"
-Warning--I didn't find a database entry for "mm:ppsn:2010"
-Warning--I didn't find a database entry for "nicso"
-Warning--I didn't find a database entry for "DBLP:conf/cec/GuervosMC11"
-Warning--I didn't find a database entry for "DBLP:conf/evoW/GuervosCM11"
-Warning--I didn't find a database entry for "DBLP:conf/iwann/MereloRACML11"
-Warning--I didn't find a database entry for "juanlu:SC08"
-Warning--I didn't find a database entry for "sofea:naco"
-(There were 10 warnings)
+Database file #2: geneura.bib
+You've used 33 entries,
+            2441 wiz_defined-function locations,
+            778 strings with 11616 characters,
+and the built_in function-call counts, 27216 in all, are:
+= -- 2503
+> -- 388
+< -- 13
++ -- 189
+- -- 97
+* -- 2266
+:= -- 3166
+add.period$ -- 84
+call.type$ -- 33
+change.case$ -- 52
+chr.to.int$ -- 0
+cite$ -- 66
+duplicate$ -- 2770
+empty$ -- 2865
+format.name$ -- 123
+if$ -- 6105
+int.to.chr$ -- 0
+int.to.str$ -- 33
+missing$ -- 344
+newline$ -- 190
+num.names$ -- 43
+pop$ -- 506
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 309
+stack$ -- 0
+substring$ -- 3686
+swap$ -- 754
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 189
+width$ -- 35
+write$ -- 393

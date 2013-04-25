@@ -74,6 +74,13 @@ Gagneur J, Elze M, Tresch A (2011) Selective phenotyping, entropy reduction,
 \newblock BMC bioinformatics 12: 406.
 \bibAnnoteFile{gagneur2011selective}
 
+\bibitem{mastermind05}
+Merelo-Guerv\'os JJ, Castillo P, Rivas V (2006) Finding a needle in a haystack
+  using hints and evolutionary computation: the case of evolutionary
+  {M}aster{M}ind.
+\newblock Applied Soft Computing 6: 170-179.
+\bibAnnoteFile{mastermind05}
+
 \bibitem{boldi2012special}
 Boldi P, Gargano L (2012) Special issue on fun with algorithms.
 \newblock Theory of Computing Systems : 1--2.
@@ -83,7 +90,8 @@ Boldi P, Gargano L (2012) Special issue on fun with algorithms.
 {Several Authors}.
 \newblock How to solve the ''{Mastermind}'' guessing game?
 \newblock
-  \url{http://stackoverflow.com/questions/1185634/how-to-solve-the-mastermind-guessing-game}.
+  \url{http://stackoverflow.com/questions/1185634/how-to-solve-the-mastermind-%
+guessing-game}.
 \newblock Question posed in StackOverflow and many answers.
 \bibAnnoteFile{stackoverflow}
 
@@ -112,6 +120,25 @@ Viglietta G (2011) {Hardness of Mastermind}.
 Kooi B (2005) Yet another {M}astermind strategy.
 \newblock ICGA Journal 28: 13-20.
 \bibAnnoteFile{Kooi200513}
+
+\bibitem{jj-ppsn96}
+Bernier JL, Herr\'aiz CI, Merelo-Guerv\'os JJ, Olmeda S, Prieto A (1996)
+  {Solving {\em {M}aster{M}ind} using {GA}s and simulated annealing: a case of
+  dynamic constraint optimization}.
+\newblock In: Proceedings PPSN, Parallel Problem Solving from Nature IV.
+  Springer-Verlag, number 1141 in Lecture Notes in Computer Science, pp.
+  553--563.
+\newblock \doi{10.1007/3-540-61723-X\_1019}.
+\newblock \urlprefix\url{http://www.springerlink.com/content/78j7430828t2867g}.
+\bibAnnoteFile{jj-ppsn96}
+
+\bibitem{genmm99}
+Merelo-Guerv\'os JJ, Carpio J, Castillo P, Rivas VM, Romero G (1999) Finding a
+  needle in a haystack using hints and evolutionary computation: the case of
+  {G}enetic {M}astermind.
+\newblock In: Scott~Brave ASW, editor, Late breaking papers at the GECCO99. pp.
+  184--192.
+\bibAnnoteFile{genmm99}
 
 \bibitem{2012arXiv1207.0773D}
 {Doerr} B, {Sp{\"o}hel} R, {Thomas} H, {Winzen} C (2012) {Playing Mastermind
@@ -144,5 +171,59 @@ Neuwirth E (1982) Some strategies for {M}astermind.
 Bestavros A, Belal A (1986) Mastermind, a game of diagnosis strategies.
 \newblock Bulletin of the Faculty of Engineering, Alexandria University .
 \bibAnnoteFile{bestavros}
+
+\bibitem{mm:ppsn:2010}
+Cotta C, Merelo~Guerv\'os JJ, Mora~Garc\'ia A, Runarsson T (2010)
+  Entropy-driven evolutionary approaches to the {Mastermind} problem.
+\newblock In: Schaefer R, Cotta C, Kolodziej J, Rudolph G, editors, Parallel
+  Problem Solving from Nature PPSN XI. Springer Berlin / Heidelberg, volume
+  6239 of \emph{Lecture Notes in Computer Science}, pp. 421-431.
+\newblock \urlprefix\url{http://dx.doi.org/10.1007/978-3-642-15871-1\_43}.
+\bibAnnoteFile{mm:ppsn:2010}
+
+\bibitem{nicso}
+Runarsson TP, Merelo JJ (2010) Adapting heuristic {M}astermind strategies to
+  evolutionary algorithms.
+\newblock In: NICSO'10 Proceedings. Springer-Verlag, Studies in Computational
+  Intelligence, pp. 255--267.
+\newblock Also available from ArXiV: \url{http://arxiv.org/abs/0912.2415v1}.
+\bibAnnoteFile{nicso}
+
+\bibitem{DBLP:conf/cec/GuervosMC11}
+Merelo-Guerv{\'o}s JJ, Mora AM, Cotta C (2011) Optimizing worst-case scenario
+  in evolutionary solutions to the {MasterMind} puzzle.
+\newblock In: IEEE Congress on Evolutionary Computation. IEEE, pp. 2669-2676.
+\bibAnnoteFile{DBLP:conf/cec/GuervosMC11}
+
+\bibitem{DBLP:conf/evoW/GuervosCM11}
+Merelo-Guerv{\'o}s JJ, Cotta C, Mora A (2011) {Improving and Scaling
+  Evolutionary Approaches to the MasterMind Problem}.
+\newblock In: Chio CD, Cagnoni S, Cotta C, Ebner M, Ek{\'a}rt A, et~al.,
+  editors, EvoApplications (1). Springer, volume 6624 of \emph{Lecture Notes in
+  Computer Science}, pp. 103-112.
+\bibAnnoteFile{DBLP:conf/evoW/GuervosCM11}
+
+\bibitem{DBLP:conf/iwann/MereloRACML11}
+Merelo-Guerv{\'o}s JJ, Romero G, Garc\'{\i}a-Arenas M, Castillo PA, Mora AM,
+  et~al. (2011) Implementation matters: Programming best practices for
+  evolutionary algorithms.
+\newblock In: Cabestany J, Rojas I, Caparr{\'o}s GJ, editors, IWANN (2).
+  Springer, volume 6692 of \emph{Lecture Notes in Computer Science}, pp.
+  333-340.
+\bibAnnoteFile{DBLP:conf/iwann/MereloRACML11}
+
+\bibitem{juanlu:SC08}
+Laredo JLJ, Castillo PA, Mora AM, Merelo JJ (2008) Evolvable agents, a fine
+  grained approach for distributed evolutionary computing: walking towards the
+  peer-to-peer computing frontiers.
+\newblock Soft Computing - A Fusion of Foundations, Methodologies and
+  Applications 12: 1145--1156.
+\bibAnnoteFile{juanlu:SC08}
+
+\bibitem{sofea:naco}
+Merelo J, Mora A, Fernandes C, Esparcia-Alcázar AI (2012) Designing and testing
+  a pool-based evolutionary algorithm.
+\newblock Natural Computing : 1-14.
+\bibAnnoteFile{sofea:naco}
 
 \end{thebibliography}
