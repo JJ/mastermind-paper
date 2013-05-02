@@ -72,7 +72,7 @@
 % Title must be 150 characters or less
 \begin{flushleft}
 {\Large
-\textbf{An experimental study of exhaustive solutions for the Mastermind puzzle}
+\textbf{An experimental study of exhaustive solutions for the MasterMind puzzle}
 }
 % Insert Author names, affiliations and corresponding author email.
 \\
@@ -93,7 +93,7 @@ $\ast$ E-mail: jmerelo@geneura.ugr.es
 % Please keep the abstract between 250 and 300 words
 \section*{Abstract}
 
-Mastermind is in essence a search problem in which a string of symbols that is kept secret must be
+MasterMind is in essence a search problem in which a string of symbols that is kept secret must be
 found by sequentially playing strings that use the same alphabet, and using the responses
 that indicate how close are those other strings to the secret one as
 hints. Although it is commercialized as a game, it is a combinatorial 
@@ -101,9 +101,9 @@ problem of high complexity, with applications on fields that range
 from computer security to genomics. As such a kind of problem, there are no
 exact solutions; even exhaustive search methods rely on heuristics to
 choose, at every step, strings to obtain as a response the best
-possible hint; these
-methods mostly try to play the move that offers the best reduction in
-search space size in the next step; this move is chosen according to
+possible hint. So far, these
+methods mostly try to play the move that offers the best possibility in reduction of the
+search space size in the next step, so this move is chosen according to
 an empirical score. In this paper we will examine several state of the
 art  
 exhaustive search methods and show that another factor, the presence of the
@@ -129,7 +129,7 @@ series of key indicators is better than the classical algorithms.
 \section*{Introduction}
 \label{s:intro}
 
-Mastermind \cite{mm:mathworld} is a board game that has enjoyed
+MasterMind \cite{mm:mathworld} is a board game that has enjoyed
 world-wide popularity in the last decades. Although its current version
 follows a design created in the 70s by the Israeli engineer Mordecai Meirowitz
 \cite{wiki:mm}, the antecedents of the game can be
@@ -144,7 +144,7 @@ come to correctly guess this combination. More precisely, the flow of the game
 is as follows:
 \begin{itemize}
 
-\item The \codemaker\  (Alice in cryptography, \cite{asuncion2010nonadaptive}) sets and hides a length $\ell$ combination of $\kappa$
+\item The \codemaker\  (Alice in cryptography \cite{goodrich2013}) sets and hides a length $\ell$ combination of $\kappa$
   symbols. Therefore, the \codebreaker\ is faced with $\kappa^\ell$
   candidates for the hidden combination, which is typically
   represented by an array of pegs of different colors (but can also be
@@ -204,7 +204,7 @@ of the \codebreaker\ , that is, a solver will be confronted with an
 oracle that will award, for each move, a number of black and white
 pegs. We will make no assumptions on the \codemaker\ other that it
 will use random combinations (which in fact it does, although actual
-applications of Mastermind might use some information on the
+applications of MasterMind might use some information on the
 distribution of symbols \cite{DBLP:journals/corr/abs-0904-4458}). A human player will probably have some
 kind of bias, but we are interested in finding the most general
 playing method
@@ -218,7 +218,7 @@ as it relates to other {\em oracle}-type problems such as the
  identifying which genotypes have interesting traits for selectively
  phenotyping them \cite{gagneur2011selective}; this is just a small
  sample of possible applications of the solution of the game of
- Mastermind. A more complete survey of applications (up to 2005) can
+ MasterMind. A more complete survey of applications (up to 2005) can
  be found in our previous paper \cite{mastermind05}, but recent posts
  in the questions-and-answers website StackOverflow and mentions in
  special issues devoted to {\em fun with algorithms}
@@ -226,7 +226,7 @@ as it relates to other {\em oracle}-type problems such as the
  ongoing interest in finding solutions to the game
  \cite{stackoverflow}. 
 
-Mastermind is also, as has been proved recently, a complex problem, paradigmatic of a whole class of search problems \cite{o1991mastermind};  the problem of finding the solution has been shown to be NP-complete under different formulations \cite{abs-cs-0512049,Kendall200813}, and the problem of counting the number of solutions compatible with a certain set of answers is
+MasterMind is also, as has been proved recently, a complex problem, paradigmatic of a whole class of search problems \cite{o1991mastermind};  the problem of finding the solution has been shown to be NP-complete under different formulations \cite{abs-cs-0512049,Kendall200813}, and the problem of counting the number of solutions compatible with a certain set of answers is
 \#P-complete \cite{DBLP:journals/corr/abs-1111-6922}. 
 This makes the search for good heuristic algorithms to solve it a challenge; besides, several issues remain open, such as what is the lowest average number of guesses needed to solve the problem for any given $\kappa$ and $\ell$. Associated to this, there arises the issue of coming up with an efficient mechanism for finding the hidden combination independently of the problem size, or at least, a method that scales gracefully when the problem size increases.
 
@@ -241,7 +241,7 @@ this kind consider as the only important factor the reduction of the search spac
 Taking into account how often the hidden combination appears
 among the top scorers for a particular method, we will propose new
 exhaustive search methods that are competitive with the best
-solutions for Mastermind known so far. Besides, these methods do not
+solutions for MasterMind known so far. Besides, these methods do not
 add too much complexity to the solution and present certain behaviors
 that are better than the empirical solutions used so far. 
 
@@ -255,10 +255,10 @@ time \cite{jj-ppsn96,genmm99,mastermind05}, eventually we will use them in those
 algorithms, but that is outside the scope of this paper.
 
 The rest of the paper is organized as follows: we lay out the
-terminology and explain the solutions to the game of Mastermind in
+terminology and explain the state of the art in solutions to the game of MasterMind in
 Section \ref{s:mm}; the state of the art in solutions to it is
 presented next, in Section \ref{s:soa}. Next we will analyze the
-best performing Mastermind methods known so far in Section  \ref{s:sm}
+best performing MasterMind methods known so far in Section  \ref{s:sm}
 and reach some conclusions on its way of working; the conclusions
 extracted in this analysis will be used in Section \ref{s:nsm} to
 propose and analyze the new solutions proposed in this paper, which we
@@ -269,7 +269,7 @@ conclusions in the last Section \ref{s:c}.
 % ------------------------------ MASTERMIND -----------------------------------
 % -----------------------------------------------------------------------------
 
-\section*{The game of Mastermind}
+\section*{The game of MasterMind}
 \label{s:mm}
 
 As mentioned in Section \ref{s:intro}, a MasterMind problem instance is
@@ -304,7 +304,7 @@ Consistent combinations are important because only a move using one of
 them decreases the size of the consistent set, at least by one (the
 combination itself). A non-consistent combination might or might not
 do that, depending on its similarity to already played moves. So most
-Mastermind strategies play a consistent combination. We will see next
+MasterMind strategies play a consistent combination. We will see next
 how these concepts are used to find the secret combination in a
 minimum number of combinations. 
 
@@ -315,7 +315,7 @@ minimum number of combinations.
 \section*{State of the art}
 \label{s:soa}
 
-Most theoretical work done on the game of Mastermind tries to find
+Most theoretical work done on the game of MasterMind tries to find
 upper bounds to the number of moves needed to find the solution. Best
 bounds known so far \cite{2012arXiv1207.0773D} point at O($\ell log \ell$),
 which is slightly faster than linear, and even O($\ell log log \ell$)
@@ -325,7 +325,7 @@ choosing the next string to play, since it is not based on the use of
 the consistent set, but on the deterministic reduction of search space
 via the elimination of colors. 
 
-Most methods for solving Mastermind, however, use  the set (or a subset) of consistent
+Most methods for solving MasterMind, however, use  the set (or a subset) of consistent
 solutions and different heuristics
 to choose which combination is played. A simple
 strategy, valid at all levels, eschews looking for sets of consistent
@@ -336,7 +336,7 @@ evolutionary algorithms\cite{mastermind05}). In general, we will call
 this strategy Random; in fact, the behavior of all these strategies is
 statistically indistinguishable; that is, it does not matter the
 method you choose for finding a consistent string. This strategy, though valid, does not
-offer the best results. However, it depends on randon draws from the
+offer the best results. However, it depends on random draws from the
 set of valid strings and thus can be extended to arbitrary sizes. If a
 method to keep the used strings is added, it is guaranteed to find the
 solution (using an amount of memory that grows with search space
@@ -410,7 +410,7 @@ all combinations will be grouped in sets according to how they compare
 to a particular one, as shown in Table \ref{tab:partitions}. For
 instance, in such table there is a big  set of combinations whose
 response is exactly the same: ABDC, ABED, ABFC, ABAD, ABAE,
-ABAF... All these combinations constitute a {\em partition}, and their
+ABAF,... All these combinations constitute a {\em partition}, and their
 score will be exactly the same. 
 
 To formalize these ideas, let ${\vec \Xi}=\{\Xi_{ibw}\}$ be a
@@ -505,10 +505,12 @@ licence and can be downloaded from \url{http://goo.gl/G9mzZ}. All
 parameters, experiment scripts, data extraction scripts and R data
 files can be found within the {\tt app/IEEE-CIG} directory. Next we
 will examine how these algorithms work in two different sizes, which
-are considered enough to assess its performance; in
+are considered enough to assess its performance, since they are two
+instances in which exhaustive strategies can be applied and run for a
+good number of times; in
 Section \ref{s:nsm} we will propose new methods and prove that they
 obtain a better average number of moves making them the new state of
-the art in exhaustive search algorithms for the game of Mastermind. 
+the art in exhaustive search algorithms for the game of MasterMind. 
 
 % -----------------------------------------------------------------------------
 % ------------------- ANALYZING EXHAUSTIVE SEARCH METHODS ---------------------
@@ -518,7 +520,7 @@ the art in exhaustive search algorithms for the game of Mastermind.
 \label{s:sm}
 
 In this section, we will outline a methodology for analyzing
-exhaustive solutions to the game of Mastermind and apply it to two
+exhaustive solutions to the game of MasterMind and apply it to two
 strategies that are usually considered the best, Entropy and Most
 Parts, for two different problem sizes, keeping  $\ell=4$ fixed and
 setting $\kappa=6$ (Subsection \ref{ss:k6}) and  $\kappa=8$
@@ -526,7 +528,7 @@ setting $\kappa=6$ (Subsection \ref{ss:k6}) and  $\kappa=8$
 
 %-------------------------------------------------------------------------------
 
-\subsection{$\ell=4,\kappa=6$}
+\subsection{Instance 1, $\ell=4,\kappa=6$}
 \label{ss:k6}
 
 Let us look first at the smallest usual size, $\kappa=6$ and
@@ -566,7 +568,7 @@ methods, see Fig. \ref{fig:histo:me}.
 \centering
 \includegraphics{img/histo-me.eps}
 \caption{Histogram with the count of the number of times every method
-  is able to find the solution in every number of moves, for the
+  is able to find the solution in each number of moves for the
   Entropy method (black and solid) and Most Parts (light or red, dashed). \label{fig:histo:me}}
 \end{figure} 
 %
@@ -593,7 +595,7 @@ are very small. It is noticeable, however, than Most Parts finishes
 less times in 1 to 3 moves, and also 5 moves. Most parts only finishes
 in less occasions than Entropy for 4 moves; quite obviously, too,
 there are a few times in which Most Parts needs 7 moves, but only
-8 out of the total 12960 games (10 games times the total number of
+8 out of the total 12,960 games (10 games times the total number of
 combinations, 1296). Again, differences are not significant, 
 but noticeable , so we will try to seek what is its source;
 these differences must be the cause why eventually Most Parts achieves
@@ -605,7 +607,7 @@ that move Entropy has always finished), Most Parts has more
 games. Since both methods play the same number of games, the
 difference is offset by the number of games more, around 150, that
 Entropy finishes by move number five; this is also seen clearly in the
-histogram \ref{fig:histo:me}. However, the important issue is the
+histogram in Figure \ref{fig:histo:me}. However, the important issue is the
 difference in {\em score}, that is, in number of moves brought by
 finishing each move. Differences in scores are computed by multiplying
 the difference in the number of games by the move number, and plotted
@@ -620,7 +622,7 @@ many times as Entropy in 5 moves. This is the key move, and the shape
 of the plot indicates a change of regime in the game. It also shows
 that no single strategy is better than the other, yielding the
 non-significant difference in moves (and scant difference in score,
-less than 100 over 12960 games!). The main conclusion would be that ,
+less than 100 over 12,960 games!). The main conclusion would be that ,
 in fact, bot solutions are very similar, and this is also supported by
 other experiments (not shown here) with more games, that do not yield
 a significant difference either. However, we can also see that the way
@@ -667,7 +669,7 @@ at every step, and this is shown in Fig. \ref{fig:cset:me} and Table
 In effect, the Entropy method is more efficient in
 reducing the size of the set of remaining solutions, which is the
 reason why usually it is presented as the best method for solving
-Mastermind, since it achieves most effectively what it is intended to
+MasterMind, since it achieves most effectively what it is intended to
 achieve: reduction in search space size. At every step,
 the difference is significant (using Wilcox test). This difference is
 of a single combination at the beginning, and decreases with time while
@@ -731,7 +733,7 @@ depending on the size of the consistent set found at Table
 \ref{tab:cset:me}, the likelihood of playing the winning combination
 is higher for Most Parts and its key to success. Making a back of the
 envelope calculation, when the game arrives at the second move, which
-roughly 11000 games do, a third of them will include the winning
+roughly 11,000 games do, a third of them will include the winning
 combination among the top scorers, which again is roughly three
 thousand. 
 
@@ -763,7 +765,7 @@ this move is when the reduction of the search space effectively kicks
 in, accounting for the {\em change in regime} we mentioned before. 
 
 This, in turn, implies one of the main results of this paper: 
-there are two factors in the success of a method for playing Mastermind. The
+there are two factors in the success of a method for playing MasterMind. The
 first is the reduction it achieves on the search space size by playing
 combinations that reduce it maximally, but there is a second and
 non-negligible factor: the chance of playing the winning
@@ -781,7 +783,7 @@ big in the next subsection.
 
 %-------------------------------------------------------------------------------
 
-\subsection{$\ell=4,\kappa=8$}
+\subsection{Instance 2, $\ell=4,\kappa=8$}
 \label{ss:k8}
 
 The way the solutions work will change when the problem size is increased, so we
@@ -791,7 +793,7 @@ exhaustive search for sizes bigger than that; in fact,
 $\ell=5,\kappa=6$ is the next step that is feasible, but initial work
 has shown that the behavior is not different from this case, and it
 takes around two times as much; while the exhaustive
-solution to the smallest Mastermind size considered takes around half
+solution to the smallest MasterMind size considered takes around half
 a second, it takes around 5 seconds for $\kappa=8, \ell=4$, and 10
 seconds for $\kappa=6,\ell=5$. In practice, this means that instead of
 using the whole search space 10 times over to compute this average, we will generate a
@@ -1007,12 +1009,12 @@ initial move.
 
 Our intention by proposing new methods is to use the two main factors
 that we have proved have an influence in the performance of
-Mastermind-playing methods to devise new strategies that could serve
+MasterMind-playing methods to devise new strategies that could serve
 as another empirical proof of the mechanism, and also, if possible,
 obtain methods that are able to obtain better results (or, at least,
 not worse results).
 
-A new method for Mastermind will somehow have to match the two
+A new method for MasterMind will somehow have to match the two
 capabilities featured by Entropy and Most Parts: the first reduces
 competently the search space, and the second is able to score better
 the actual secret combination, which can then be selected for playing
@@ -1021,7 +1023,7 @@ to combine them with the objective of achieving a better average
 number of moves.
 %
 \begin{algorithm*}[htb!]
-\caption{Choosing the next move in the {\em Plus} Mastermind solution
+\caption{Choosing the next move in the {\em Plus} MasterMind solution
   method. This algorithm is the new version we propose to the
   \textsc{NextMove} function presented in Algorithm \ref{alg:general}.}\label{alg:plus}
 \smallskip
@@ -1052,7 +1054,7 @@ probability of finding the winning combination among them is also
 increased. 
 %
 \begin{algorithm*}[htb!]
-\caption{Choosing the next move in the {\em Plus} Mastermind solution
+\caption{Choosing the next move in the {\em Plus} MasterMind solution
   method. Please note that up to line 6, this algorithm is identical to \ref{alg:plus}.}\label{alg:plus2}
 \smallskip
 \textbf{typedef} Combination: \textbf{vector}$[1..\ell]$ \textbf{of} $\mathbb{N}_\kappa$\;
@@ -1069,14 +1071,15 @@ $guess\leftarrow$ \textsc{RandomElement} ( TopScorersAll )\;
 \end{algorithm*}
 
 There is no single way of combining the two scoring methods. A second
-one tested, which we will call {\em Plus2} (and which is outlined in \ref{alg:plus2}), works similarly. It proceeds
+one tested, which we will call {\em Plus2} (and which is outlined in
+Algorithm \ref{alg:plus2}), works similarly. It proceeds
 initially as the Entropy method, by scoring combinations according to
 its partition entropy. But then, the top scorers of this method are
 again scored according to Most Parts. Out of the subset of top Entropy
 scorers with the highest Most Parts score, a random combination is
 returned. Please note that, in order to compute the Most Parts score
 of the top Entropy scorers, the whole Consistent Set $F$ must be
-scored. In \ref{alg:plus2}, line 7 would extract the top scorers
+scored. In Algorithm \ref{alg:plus2}, line 7 would extract the top scorers
 according to the Most Parts method from the set of top scorers by the
 Entropy method. While in Plus what is played belongs
 to a subset of Entropy and Most Parts only if their intersection is
@@ -1116,7 +1119,7 @@ moves. They are shown in Table \ref{tab:plus:46}.
 Difference is not statistically significant, but as indicated in the
 study presented in the previous section, it is encouraging to see that
 results are, at least, as good as previously, and maybe marginally
-better (for Plus, at least); in this particular Mastermind
+better (for Plus, at least); in this particular MasterMind
 competition, Plus would be the best; however, it is clear that
 statistics dictate that it could happen otherwise in a different
 one. At least the maximum number of moves is kept at the same level 
@@ -1186,7 +1189,7 @@ could obtain the same results. However, we have achieved
 
 As we have seen before, the scenario is different at other sizes, so we will have to experiment them over the $\kappa=8,
 \ell=6$ space. We use the same instance of 5000 combinations as we did
-in the previous Subsection \ref{ss:k8}. This size was big enough to find some differences among
+in Subsection \ref{ss:k8}. This size was big enough to find some differences among
 methods, and small enough for being able to perform the whole
 experiment in a reasonable amount of time (around 90 minutes for the
 whole set). The average number of moves is shown in Table
@@ -1275,7 +1278,7 @@ MasterMind. But looking more precisely at the actual chance of drawing
 the secret code (not the binary probability of finding it among the
 top scorers as in the previous graph), represented in Figure
 \ref{fig:prob:plus:48} we find the situation very similar to the one
-shown in \ref{fig:prob:me:48}, however, the probability of drawing the
+shown in Figure \ref{fig:prob:me:48}, however, the probability of drawing the
 secret code is better for Plus2 than for Most Parts, and significantly
 so for all moves up to the 5th. However, it is still worse for Plus2
 than for Entropy for the third move ($x=2$), which accounts for its
@@ -1363,7 +1366,7 @@ Entropy and Plus2.
 \caption{Chance of finding the secret code among the top scorers for the
   Entropy method (black and solid) and Plus2 (light or
   brown, dot-dashed), both for ABCD as first move, and Entropy (black,
-  dot-long-dash) and Plus2 (brown or light, long dash) for ABCA .\label{fig:prob:abca:48}} 
+  dot-long-dash) and Plus2 (brown or light, long dash) for ABCA.\label{fig:prob:abca:48}} 
 \end{figure} 
 %%% TABLE 13 %%%
 %\begin{table}[!htb]
@@ -1449,11 +1452,11 @@ not significant) of Entropy (ABCA).
   number of moves. \label{fig:scoredif:mp:abca:48}}
 \end{figure}
 %
-The improvements brough by the new Plus2 algorithm and the change in
+The improvements brought by the new Plus2 algorithm and the change in
 initial should be highlighted if we compare significantly different
 methods: Most Parts vs. Plus2(ABCA). The difference in consistent set
-size is shown in \ref{fig:cset:mp:plus:48}, and it shows the same
-pattern as the previous example \ref{tab:cset:abca:48}, only it is
+size is shown in Figure \ref{fig:cset:mp:plus:48}, and it shows the same
+pattern as the previous example (see Table \ref{tab:cset:abca:48}), only it is
 quite clear now that there is a consistent reduction from the first
 move. It is interesting to note again that the reduction in search
 space (or consistent set) size provoked by using ABCA as first move
@@ -1484,7 +1487,7 @@ advantage of one algorithm over other, and that studying mainly
 the size of consistent sets and the probability of drawing the secret code,
 and when one mechanism for finishing the game takes over the other, is
 the best way of evaluating different algorithms for playing the game
-of Mastermind. 
+of MasterMind. 
 
 % -----------------------------------------------------------------------------
 % ------------------------------- CONCLUSIONS ---------------------------------
@@ -1493,7 +1496,7 @@ of Mastermind.
 \section*{Conclusions and discussion}
 \label{s:c}
 
-In this work we have analyzed the solutions to the game of Mastermind
+In this work we have analyzed the solutions to the game of MasterMind
 in a novel way, taking into account not only the reduction of the size
 of the search space brought by the combination played, but also how
 every method scores the components of the search space and whether the
@@ -1535,7 +1538,7 @@ tested, which is considered enough) as good as the best previous
 method described, which makes it more robust.
 
 This paper also introduces and tests a methodology for testing
-different algorithms for solving Mastermind. While the first
+different algorithms for solving MasterMind. While the first
 approximation would be to empirically measure the average number of
 moves, and the first would design methods that maximize the reduction
 of search space every move, we have introduced here the measurement of
@@ -1573,13 +1576,14 @@ to compute analytically.
 It is more interesting, however, to use these results for methods that
 use a sample of the set of consistent combinations, such as
 evolutionary algorithms
-\cite{DBLP:conf/evoW/GuervosCM11,Berghman20091880}. Results obtained
-here can be used in two different ways: by taking into account the
+\cite{DBLP:conf/evoW/GuervosCM11,Berghman20091880}. This method,
+originally proposed by Ugurdag et al. \cite{Ugurdag}
+can be used in two different ways: by taking into account the
 size of the consistent set to set the sample size, which was set
-heuristically \cite{nicso} or fixed \cite{Berghman20091880}, and also
+heuristically \cite{nicso} or fixed \cite{Berghman20091880,Ugurdag} or
 by using a combination of Most Parts and Entropy scores to compute the
 fitness of a particular combination. This will allow to find solutions
-to Mastermind problems in bigger search spaces. However, the limiting
+to MasterMind problems in bigger search spaces. However, the limiting
 factor keeps on being the size of the consistent set that will be used
 to score the combinations; since sample size increases with problem
 size, eventually a non-feasible limit (in term of time or memory
@@ -1853,10 +1857,21 @@ Entropy & 4.413 $\pm$ 0.006 & 6 \\
 Most Parts & 4.406 $\pm$ 0.007 & 7 \\
 Plus & 4.404$\pm$ 0.007 & 6 \\
 Plus2 & 4.41 $\pm$ 0.007 & 6 \\
+Berghman & 4.39 & 7 \\
+Ugurdag & 4.345 & \\
 \hline
 \end{tabular}
 \begin{flushleft}Average and maximum number of moves for the new search
-  strategies proposed, and comparison with the previous ones.
+  strategies proposed, and comparison with the previous ones. For the
+  sake of comparison, the result by Berghman et
+  al. \cite{Berghman20091880} is included, although it should
+  be noted that it is not clear from their paper what kind of sample
+  they are using and they do not report standard deviation; our guess
+  is that they use a single run over the whole set; we use 10 runs
+  over the whole set totalling 12,960 games.  On the other hand,
+  Ugurdag \cite{Ugurdag} mentions results thar are much better, but it
+  is not clear either if they are using the whole combination set
+  (1000 games are mentioned in the paper). 
 \end{flushleft}
 \label{tab:plus:46}
 \end{table}
@@ -1887,9 +1902,9 @@ Plus2 & 4.41 $\pm$ 0.007 & 6 \\
 \bf{***Table title***}}
 \begin{tabular}{|l|c|c|c|}
 \hline
-\emph{Method} & \multicolumn{3}{c|}{\emph{Number of moves}}\\
- & \emph{Average} & \emph{Maximum} & \emph{Median} \\
-\emph{Method} & \emph{Number of moves: Average} & \emph{Number of
+ & \multicolumn{3}{c|}{\emph{Number of moves}}\\
+\emph{Method} & \emph{Average} & \emph{Maximum} & \emph{Median} \\
+ & \emph{Number of moves: Average} & \emph{Number of
   moves: Maximum} \\
 \hline
 Entropy & 5.132 $\pm$ 0.012 & 8  & 5\\
