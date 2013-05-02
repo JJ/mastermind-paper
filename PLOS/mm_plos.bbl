@@ -39,11 +39,11 @@ Chen ST, Lin SS, Huang LT (2007) A two-phase optimization algorithm for
 \newblock Computer Journal 50: 435-443.
 \bibAnnoteFile{Chen2007435}
 
-\bibitem{asuncion2010nonadaptive}
-Asuncion A, Goodrich M (2010) Nonadaptive mastermind algorithms for string and
-  vector databases, with case studies.
-\newblock Knowledge and Data Engineering, IEEE Transactions on : 1--1.
-\bibAnnoteFile{asuncion2010nonadaptive}
+\bibitem{goodrich2013}
+Asuncion AU, Goodrich MT (2013) Nonadaptive mastermind algorithms for string
+  and vector databases, with case studies.
+\newblock IEEE Transactions on Knowledge and Data Engineering 25: 131-144.
+\bibAnnoteFile{goodrich2013}
 
 \bibitem{DBLP:journals/corr/abs-0904-4458}
 Goodrich MT (2009) The mastermind attack on genomic data.
@@ -202,6 +202,14 @@ Merelo-Guerv{\'o}s JJ, Cotta C, Mora A (2011) {Improving and Scaling
   editors, EvoApplications (1). Springer, volume 6624 of \emph{Lecture Notes in
   Computer Science}, pp. 103-112.
 \bibAnnoteFile{DBLP:conf/evoW/GuervosCM11}
+
+\bibitem{Ugurdag}
+Ugurdag H, Sahin Y, Baskirt O, Dedeoglu S, Goren S, et~al. (2006)
+  Population-based fpga solution to mastermind game.
+\newblock In: Adaptive Hardware and Systems, 2006. AHS 2006. First NASA/ESA
+  Conference on. pp. 237-246.
+\newblock \doi{10.1109/AHS.2006.57}.
+\bibAnnoteFile{Ugurdag}
 
 \bibitem{DBLP:conf/iwann/MereloRACML11}
 Merelo-Guerv{\'o}s JJ, Romero G, Garc\'{\i}a-Arenas M, Castillo PA, Mora AM,
